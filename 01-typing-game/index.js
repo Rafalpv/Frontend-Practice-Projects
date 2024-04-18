@@ -1,11 +1,29 @@
-//import { words as INITIAL_WORDS } from './data.js';
+import { words as INITIAL_WORDS } from './data.js'
 
-const $time = document.querySelector("time");
+const $time = document.querySelector('time');
+const $paragraph = document.querySelector('p');
+
 const INITIAL_TIME = 30;
 let currentTime = INITIAL_TIME;
 
+let words = []
+
 function initGame() {
     $time.textContent = INITIAL_TIME;
+    
+    words = INITIAL_WORDS.toSorted(
+        () => Math.random() - 0.5
+    ).slice(0,50);
+
+    $paragraph.innerHTML = words.map((word) => {
+        const letters = word.split('')
+        return `<word>
+        ${letters
+            .map(letter => `<letter>${letter}</letter>`)
+            .join('')
+          }
+        </word>`
+    }).join('')
 }
 
 function initEvents() {
@@ -15,7 +33,7 @@ function initEvents() {
         if (currentTime === 0) {
             clearInterval(intervalID);
         }
-    }, 1000);
+    }, 1000);    
 }
 
 initGame();

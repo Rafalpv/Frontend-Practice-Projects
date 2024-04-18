@@ -10,3 +10,30 @@
 time{
     color: var(--yellow);
 }
+
+body{
+    background: var(--black);
+    font: 25px Menlo, monospace;
+    display: grid;
+    padding: 32px;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 16px;
+}
+
+section {
+    padding: 12rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 68rem;
+    gap: 4px;
+    color: var(--gray);
+}
+
+p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 15px;
+    margin: 0;
+
+}
