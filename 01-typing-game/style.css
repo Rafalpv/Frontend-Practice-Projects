@@ -1,4 +1,4 @@
-:root{
+:root {
     color-scheme: light dark;
     --green: #00b755;
     --yellow: #daaf38;
@@ -7,11 +7,11 @@
     --gray: #999;
 }
 
-time{
+time {
     color: var(--yellow);
 }
 
-body{
+body {
     background: var(--black);
     font: 25px Menlo, monospace;
     display: grid;
@@ -27,13 +27,59 @@ section {
     flex-direction: column;
     max-width: 68rem;
     gap: 4px;
-    color: var(--gray);
 }
 
-p{
+p {
     display: flex;
     flex-wrap: wrap;
     gap: 3px 15px;
     margin: 0;
+}
 
+input {
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+letter {
+    color: var(--gray);
+    position: relative;
+
+    &.active::before {
+        content: '|';
+        color: var(--yellow);
+        font-size: 23px;
+        position: absolute;
+        left: -68%;
+        animation: 1s blink infinite ease-in-out;
+    }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    max-width: 100%;
+    text-align: center;
+}
+
+a{
+    color: var(--yellow);
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 0.8;
+    
 }
