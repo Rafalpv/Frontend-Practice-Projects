@@ -1,0 +1,13 @@
+:root {
+    color-scheme: light dark;
+    --dark-blue: #0a0a23;
+    --yellow: #feac32
+}
+
+html{
+    background-color: var(--dark-blue);
+}
+
+.freecodecamp-logo{
+    max-width: 15rem
+}
