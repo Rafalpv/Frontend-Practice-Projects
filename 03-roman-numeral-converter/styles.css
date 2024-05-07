@@ -1,13 +1,65 @@
-:root {
-    color-scheme: light dark;
+:root{
     --dark-blue: #0a0a23;
-    --yellow: #feac32
 }
 
-html{
+body {
+    font-family: Arial, sans-serif;
     background-color: var(--dark-blue);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-.freecodecamp-logo{
-    max-width: 15rem
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.freecodecamp-logo {
+    width: 40rem;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #56590f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 24px;
+    color: black;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
 }
