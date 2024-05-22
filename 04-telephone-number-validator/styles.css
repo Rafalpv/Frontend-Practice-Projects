@@ -1,0 +1,97 @@
+/* styles.css */
+
+:root{
+    --dark-blue: #0a0a23;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-blue);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+/* Estilo del logo */
+#freecodecamp-logo {
+    width: 30rem;
+    margin-bottom: 5rem;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Estilo del contenedor principal */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Estilo del subtítulo */
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo del input de texto */
+#user-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#results-div {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ff0000; /* Color para los mensajes de error */
+}
+
+button {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#clear-btn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button#clear-btn:hover {
+    background-color: #c82333;
+}
+
+.clear{
+    display: none;
+}
